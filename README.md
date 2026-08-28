@@ -19,4 +19,4 @@ Open `http://127.0.0.1:4173/`.
 - Virtual MCU: https://virtual-mcu-training-env.pages.dev/
 - Obsidian Context Map for Jira: https://marketplace.atlassian.com/apps/1923219004
 
-The generated visual concept is retained at `assets/design-concept.png` for design provenance and is not loaded by the public page.
+The public page uses screenshots from the actual products. No generated illustration is shipped with the site.
