@@ -1,139 +1,198 @@
 <!doctype html>
 <html lang="ko">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="올라잇소프트는 데이터, 자동화, 개발 도구를 실제로 쓰이는 소프트웨어로 만듭니다."
-    />
-    <meta name="theme-color" content="#f6f3ec" />
-    <meta property="og:title" content="올라잇소프트 · AllrightSoft" />
-    <meta
-      property="og:description"
-      content="복잡한 정보를 쓸모 있는 소프트웨어로 만듭니다."
-    />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="assets/virtual-mcu.png" />
-    <title>올라잇소프트 · AllrightSoft</title>
-    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <a class="skip-link" href="#main">본문으로 건너뛰기</a>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="올라잇소프트는 데이터 탐색, 디지털 콘텐츠, 개발 도구를 만드는 소프트웨어 회사입니다. AllrightSoft의 제품과 서비스를 만나보세요." />
+  <meta name="theme-color" content="#142d47" />
+  <meta property="og:title" content="올라잇소프트 · AllrightSoft" />
+  <meta property="og:description" content="일상의 정보부터 개발의 도구까지. 올라잇소프트가 만드는 제품과 서비스를 만나보세요." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="ko_KR" />
+  <meta property="og:url" content="https://allrightsoftware.com/" />
+  <meta property="og:image" content="https://allrightsoftware.com/assets/virtual-mcu-20261011.png" />
+  <meta property="og:image:alt" content="AllrightSoft의 Virtual MCU 모터 제어 실습 환경" />
+  <title>올라잇소프트 · AllrightSoft</title>
+  <link rel="canonical" href="https://allrightsoftware.com/" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preload" href="assets/fonts/PretendardVariable.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="styles.css?v=20261011" />
+  <script src="script.js?v=20261011" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">본문으로 건너뛰기</a>
+  <svg class="icon-definitions" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="arrow-right" viewBox="0 0 24 24"><path d="M4 12h15M13 5l7 7-7 7" /></symbol>
+    <symbol id="arrow-out" viewBox="0 0 24 24"><path d="M6 18 18 6M6 6h12v12" /></symbol>
+    <symbol id="expand" viewBox="0 0 24 24"><path d="M9 4H4v5m11-5h5v5M4 15v5h5m11-5v5h-5" /></symbol>
+    <symbol id="close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18" /></symbol>
+    <symbol id="mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="1" /><path d="m3 6 9 7 9-7" /></symbol>
+    <symbol id="location" viewBox="0 0 24 24"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z" /><circle cx="12" cy="10" r="2" /></symbol>
+  </svg>
 
-    <header class="site-header">
+  <header class="site-header">
+    <div class="header-inner section-shell">
       <a class="wordmark" href="#top" aria-label="올라잇소프트 홈">
         <img src="assets/logo-mark.svg" alt="" width="48" height="48" />
-        <span class="wordmark-copy">
-          <strong>ALLRIGHTSOFT</strong>
-          <small>올라잇소프트</small>
-        </span>
+        <span class="wordmark-copy"><strong>ALLRIGHTSOFT</strong><small>올라잇소프트</small></span>
       </a>
-      <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">
-        메뉴
-      </button>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav">메뉴 <span class="menu-lines" aria-hidden="true"></span></button>
       <nav id="site-nav" class="site-nav" aria-label="주요 메뉴">
-        <a href="#products">제품·서비스</a>
-        <a href="#contact">CONTACT</a>
+        <a href="#products">제품·서비스</a><a href="#about">회사 소개</a><a href="#contact">문의</a>
       </nav>
-    </header>
+    </div>
+  </header>
 
-    <main id="main">
-      <section id="top" class="hero" aria-labelledby="hero-title">
-        <div class="hero-inner section-shell">
-          <div class="hero-copy reveal">
-            <h1 id="hero-title">생각을 서비스로<br />완성합니다.</h1>
-            <a class="hero-link" href="#products">제품 보기</a>
-          </div>
+  <main id="main">
+    <section id="top" class="hero section-shell" aria-labelledby="hero-title">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <h1 id="hero-title">일상의 정보부터<br />개발의 도구까지.</h1>
+          <p>올라잇소프트는 데이터 탐색, 디지털 콘텐츠, 개발 도구를 만드는 소프트웨어 회사입니다. 일상과 업무에 필요한 기능을 제품으로 연결합니다.</p>
+          <a class="primary-link" href="#products">제품 둘러보기 <svg class="icon" aria-hidden="true"><use href="#arrow-right" /></svg></a>
         </div>
-      </section>
-
-      <section id="products" class="products section-shell" aria-labelledby="products-title">
-        <div class="section-heading reveal">
-          <h2 id="products-title">Products &amp; Services</h2>
+        <div class="hero-media" aria-label="올라잇소프트 제품 화면">
+          <img class="hero-screen hero-screen-primary" src="assets/jira-context-map-20260909.png" width="1536" height="711" alt="Jira 이슈 트리와 관계 맵의 예시 프로젝트 화면" fetchpriority="high" />
+          <img class="hero-screen hero-screen-secondary" src="assets/used-pick-20261011.png" alt="USED PICK의 Intel Core i5-12400F 중고 PC 부품 검색 결과" />
         </div>
-
-        <article class="product-row reveal">
-          <div class="product-copy">
-            <h3><a href="https://kstockclock.com/" target="_blank" rel="noreferrer">K Stock</a></h3>
-          </div>
-          <a class="product-visual dark" href="https://kstockclock.com/" target="_blank" rel="noreferrer">
-            <img src="assets/k-stock.png" alt="K Stock 종목 상세 분석 화면" loading="lazy" />
-          </a>
-        </article>
-
-        <article class="product-row reverse reveal">
-          <div class="product-copy">
-            <h3><a href="https://www.used-pick.com/" target="_blank" rel="noreferrer">USED PICK</a></h3>
-          </div>
-          <a class="product-visual" href="https://www.used-pick.com/" target="_blank" rel="noreferrer">
-            <img src="assets/used-pick.png" alt="USED PICK 아이폰 중고상품 검색 결과 화면" loading="lazy" />
-          </a>
-        </article>
-
-        <article class="product-row reveal">
-          <div class="product-copy">
-            <h3><a href="https://coteepet.com/" target="_blank" rel="noreferrer">COTEEPET</a></h3>
-          </div>
-          <a class="product-visual" href="https://coteepet.com/" target="_blank" rel="noreferrer">
-            <img src="assets/coteepet.png" alt="COTEEPET 캐릭터 카탈로그 화면" loading="lazy" />
-          </a>
-        </article>
-
-        <article class="product-row reverse reveal">
-          <div class="product-copy">
-            <h3><a href="https://emotown.com/" target="_blank" rel="noreferrer">EMOTOWN</a></h3>
-          </div>
-          <a class="product-visual" href="https://emotown.com/" target="_blank" rel="noreferrer">
-            <img src="assets/emotown.png" alt="EMOTOWN 이모티콘 탐색 화면" loading="lazy" />
-          </a>
-        </article>
-
-        <article class="product-row reveal">
-          <div class="product-copy">
-            <h3><a href="https://virtual-mcu-training-env.pages.dev/" target="_blank" rel="noreferrer">Virtual MCU</a></h3>
-          </div>
-          <a class="product-visual dark" href="https://virtual-mcu-training-env.pages.dev/" target="_blank" rel="noreferrer">
-            <img src="assets/virtual-mcu.png" alt="Virtual MCU 코드 편집기와 실행 결과 화면" loading="lazy" />
-          </a>
-        </article>
-
-        <article class="product-row reverse reveal">
-          <div class="product-copy">
-            <h3><a href="https://marketplace.atlassian.com/apps/1923219004" target="_blank" rel="noreferrer">Obsidian Context Map for Jira</a></h3>
-          </div>
-          <a class="product-visual" href="https://marketplace.atlassian.com/apps/1923219004" target="_blank" rel="noreferrer">
-            <img src="assets/jira-context-map.png" alt="Jira 이슈 목록, 관계 맵, 상세 패널 화면" loading="lazy" />
-          </a>
-        </article>
-
-        <article class="product-row reveal">
-          <div class="product-copy">
-            <h3><a href="https://tndud2505-ops.github.io/Career_Profile/projects/train-gallery.html" target="_blank" rel="noreferrer">Train Gallery</a></h3>
-          </div>
-          <a class="product-visual" href="https://tndud2505-ops.github.io/Career_Profile/projects/train-gallery.html" target="_blank" rel="noreferrer">
-            <img src="assets/train-gallery.png" alt="Train Gallery 운동 기록 캘린더 화면" loading="lazy" />
-          </a>
-        </article>
-      </section>
-    </main>
-
-    <footer id="contact" class="site-footer section-shell">
-      <div>
-        <span>Suwon, Korea</span>
-        <a href="https://github.com/tndud2505-ops" target="_blank" rel="noreferrer">GitHub</a>
-        <a href="https://tndud2505-ops.github.io/Career_Profile/" target="_blank" rel="noreferrer">Profile</a>
       </div>
-      <p>&copy; 2026 AllrightSoft</p>
-    </footer>
+      <div class="focus-areas" aria-label="개발 분야">
+        <div><h2>데이터·생활</h2><p>비교하고 기록하는 서비스</p></div>
+        <div><h2>디지털 콘텐츠</h2><p>창작과 활용을 잇는 플랫폼</p></div>
+        <div><h2>개발 도구</h2><p>복잡한 구조를 살펴보는 도구</p></div>
+      </div>
+    </section>
 
-    <script src="script.js" defer></script>
-  </body>
+    <section id="products" class="products section-shell" aria-labelledby="products-title">
+      <div class="section-heading">
+        <h2 id="products-title">우리가 만드는 소프트웨어</h2>
+        <p>서비스의 역할과 주요 기능을 살펴보고, 실제 제품으로 이동하세요.</p>
+      </div>
+      <div class="product-filters" role="group" aria-label="제품 분야 선택" hidden>
+        <button type="button" data-filter="all" aria-pressed="true">전체</button>
+        <button type="button" data-filter="data" aria-pressed="false">데이터·생활</button>
+        <button type="button" data-filter="content" aria-pressed="false">콘텐츠</button>
+        <button type="button" data-filter="dev" aria-pressed="false">개발 도구</button>
+      </div>
+      <p class="sr-only" id="filter-status" aria-live="polite" aria-atomic="true">전체 7개 제품</p>
+      <div class="product-grid">
+        <article class="product" data-category="data">
+          <button class="product-visual" type="button" data-image="assets/k-stock-20261011.png" data-caption="K Stock — 종목의 가격 흐름과 이동평균선·차트 패턴 탐색" aria-label="K Stock 화면 확대">
+            <img src="assets/k-stock-20261011.png" alt="K Stock LG전자 상세 차트의 가격 흐름, 이동평균선과 대칭삼각형 표시" loading="lazy" />
+            <span class="visual-action"><svg class="icon" aria-hidden="true"><use href="#expand" /></svg>화면 확대</span>
+          </button>
+          <div class="product-copy">
+            <p class="product-category">데이터·생활</p><h3>K Stock</h3>
+            <p class="product-description">국내 주식의 가격 흐름과 지표를 탐색하는 리서치 서비스입니다. 조건별 종목 검색부터 상세 차트·산업군 비교까지 한 흐름으로 살펴봅니다.</p>
+            <ul class="product-features" aria-label="K Stock 주요 기능"><li>종목 조건 검색</li><li>차트·지표 탐색</li><li>산업 흐름 비교</li></ul>
+            <a class="text-link" href="https://kstockclock.com/" target="_blank" rel="noopener noreferrer" aria-label="K Stock 서비스 보기, 새 창">서비스 보기 <svg class="icon" aria-hidden="true"><use href="#arrow-out" /></svg></a>
+          </div>
+        </article>
+        <article class="product" data-category="data">
+          <button class="product-visual" type="button" data-image="assets/used-pick-20261011.png" data-caption="USED PICK — 모델별 중고 PC 부품 매물과 표시 가격 비교" aria-label="USED PICK 화면 확대">
+            <img src="assets/used-pick-20261011.png" alt="USED PICK의 CPU 모델 선택, 상세 필터와 중고 매물 가격 목록" loading="lazy" />
+            <span class="visual-action"><svg class="icon" aria-hidden="true"><use href="#expand" /></svg>화면 확대</span>
+          </button>
+          <div class="product-copy">
+            <p class="product-category">데이터·생활</p><h3>USED PICK</h3>
+            <p class="product-description">여러 중고 플랫폼의 PC 부품 매물과 표시 가격을 비교합니다. 모델별 가격 추이를 확인하고, 부품을 골라 PC 구성과 예산을 정리할 수 있습니다.</p>
+            <ul class="product-features" aria-label="USED PICK 주요 기능"><li>PC 부품 통합 검색</li><li>모델별 가격 추이</li><li>PC 구성·비용 비교</li></ul>
+            <a class="text-link" href="https://used-pick.com/" target="_blank" rel="noopener noreferrer" aria-label="USED PICK 서비스 보기, 새 창">서비스 보기 <svg class="icon" aria-hidden="true"><use href="#arrow-out" /></svg></a>
+          </div>
+        </article>
+        <article class="product" data-category="content">
+          <button class="product-visual" type="button" data-image="assets/coteepet-20261011.png" data-caption="COTEEPET — Codex Pet 검색과 애니메이션 미리보기" aria-label="COTEEPET 화면 확대">
+            <img src="assets/coteepet-20261011.png" alt="COTEEPET 최신 펫 카탈로그의 검색, 정렬과 캐릭터 애니메이션 미리보기" loading="lazy" />
+            <span class="visual-action"><svg class="icon" aria-hidden="true"><use href="#expand" /></svg>화면 확대</span>
+          </button>
+          <div class="product-copy">
+            <p class="product-category">콘텐츠</p><h3>COTEEPET</h3>
+            <p class="product-description">Codex Pet을 찾고 움직임을 미리 보는 웹 카탈로그입니다. 9가지 동작을 확인해 필요한 패키지를 내려받고, 로그인 후 직접 만든 펫을 등록할 수 있습니다.</p>
+            <ul class="product-features" aria-label="COTEEPET 주요 기능"><li>펫 검색·필터</li><li>9가지 동작 미리보기</li><li>패키지 등록·다운로드</li></ul>
+            <a class="text-link" href="https://coteepet.com/ko/" target="_blank" rel="noopener noreferrer" aria-label="COTEEPET 서비스 보기, 새 창">서비스 보기 <svg class="icon" aria-hidden="true"><use href="#arrow-out" /></svg></a>
+          </div>
+        </article>
+        <article class="product" data-category="content">
+          <button class="product-visual" type="button" data-image="assets/emotown-20261011.png" data-caption="EMOTOWN — 디자인용 이모티콘 세트 검색과 미리보기" aria-label="EMOTOWN 화면 확대">
+            <img src="assets/emotown-20261011.png" alt="EMOTOWN의 이모티콘 검색과 최신 투명 PNG 이모티콘 세트 갤러리" loading="lazy" />
+            <span class="visual-action"><svg class="icon" aria-hidden="true"><use href="#expand" /></svg>화면 확대</span>
+          </button>
+          <div class="product-copy">
+            <p class="product-category">콘텐츠</p><h3>EMOTOWN</h3>
+            <p class="product-description">디자인 작업에 활용할 투명 PNG 이모티콘 세트를 탐색합니다. 세트 전체나 개별 이미지를 내려받고, 제작자는 로그인 후 자신의 이미지 묶음을 게시할 수 있습니다.</p>
+            <ul class="product-features" aria-label="EMOTOWN 주요 기능"><li>세트 검색·분류</li><li>이미지·ZIP 다운로드</li><li>Creator Studio</li></ul>
+            <a class="text-link" href="https://emotown.com/ko/" target="_blank" rel="noopener noreferrer" aria-label="EMOTOWN 서비스 보기, 새 창">서비스 보기 <svg class="icon" aria-hidden="true"><use href="#arrow-out" /></svg></a>
+          </div>
+        </article>
+        <article class="product" data-category="dev">
+          <button class="product-visual" type="button" data-image="assets/virtual-mcu-20261011.png" data-caption="Virtual MCU — MCU·H-Bridge·DC 모터 회로와 핀 경로 확인" aria-label="Virtual MCU 화면 확대">
+            <img src="assets/virtual-mcu-20261011.png" alt="Virtual MCU의 UART·NTC 입력, MCU·H-Bridge·DC 모터 회로와 핀 경로 패널" loading="lazy" />
+            <span class="visual-action"><svg class="icon" aria-hidden="true"><use href="#expand" /></svg>화면 확대</span>
+          </button>
+          <div class="product-copy">
+            <p class="product-category">개발 도구 · 브라우저 실습 환경</p><h3>Virtual MCU</h3>
+            <p class="product-description">C 펌웨어와 모터 제어 회로를 연결해 보는 학습 환경입니다. 코드를 편집하고 센서 입력을 조절하며, 핀·레지스터·신호의 연결을 살펴봅니다.</p>
+            <ul class="product-features" aria-label="Virtual MCU 주요 기능"><li>펌웨어 편집·빌드</li><li>모터·센서 모델</li><li>핀·레지스터 탐색</li></ul>
+            <a class="text-link" href="https://virtual-mcu-training-env.pages.dev/" target="_blank" rel="noopener noreferrer" aria-label="Virtual MCU 실습 환경 열기, 새 창">실습 환경 열기 <svg class="icon" aria-hidden="true"><use href="#arrow-out" /></svg></a>
+          </div>
+        </article>
+        <article class="product" data-category="dev">
+          <button class="product-visual product-visual-dark" type="button" data-image="assets/jira-context-map-20260909.png" data-caption="Obsidian Context Map for Jira — 예시 프로젝트의 이슈 트리와 관계 맵" aria-label="Obsidian Context Map for Jira 화면 확대">
+            <img src="assets/jira-context-map-20260909.png" alt="Jira 예시 프로젝트의 Epic·Task·Subtask 트리와 이슈 관계 맵" loading="lazy" />
+            <span class="visual-action"><svg class="icon" aria-hidden="true"><use href="#expand" /></svg>화면 확대</span>
+          </button>
+          <div class="product-copy">
+            <p class="product-category">개발 도구 · Jira Cloud 앱</p><h3>Obsidian Context Map for Jira</h3>
+            <p class="product-description">Jira 이슈의 계층과 연결 관계를 지도처럼 탐색합니다. 이슈 트리·관계 맵·상세 정보를 함께 보고, 앱에서 만든 업무 관계를 관리할 수 있습니다.</p>
+            <ul class="product-features" aria-label="Jira 앱 주요 기능"><li>이슈 계층 탐색</li><li>관계 맵</li><li>이슈 상세 조회</li></ul>
+            <a class="text-link" href="https://marketplace.atlassian.com/apps/1923219004/obsidian-context-map-for-jira" target="_blank" rel="noopener noreferrer" aria-label="Obsidian Context Map for Jira Marketplace 보기, 새 창">Marketplace 보기 <svg class="icon" aria-hidden="true"><use href="#arrow-out" /></svg></a>
+          </div>
+        </article>
+        <article class="product product-wide" data-category="content">
+          <div class="phone-gallery" aria-label="Train Gallery 실제 Android 화면">
+            <button type="button" data-image="assets/train-gallery-today-20261011.jpg" data-caption="Train Gallery — 오늘 운동 촬영·가져오기와 이어서 편집" aria-label="Train Gallery 오늘 운동 화면 확대"><img src="assets/train-gallery-today-20261011.jpg" width="1080" height="2340" alt="Train Gallery 오늘 운동의 카메라 열기, 영상 가져오기와 이어서 편집" loading="lazy" /></button>
+            <button type="button" data-image="assets/train-gallery-vlog-20261011.jpg" data-caption="Train Gallery — 여러 운동 클립을 연결한 브이로그 편집" aria-label="Train Gallery 브이로그 편집 화면 확대"><img src="assets/train-gallery-vlog-20261011.jpg" width="1080" height="2340" alt="Train Gallery의 운동 영상 미리보기, 여러 클립 타임라인과 구간·공용 자막·이모티콘 편집" loading="lazy" /></button>
+          </div>
+          <div class="product-copy">
+            <p class="product-category">콘텐츠 · 모바일 앱</p><h3>Train Gallery</h3>
+            <p class="product-lead">운동 영상에서 나만의 브이로그까지.</p>
+            <p class="product-description">운동 영상을 촬영하거나 가져와 날짜별로 기록합니다. 여러 클립의 구간·자막·이모티콘을 편집해 하나의 브이로그로 만들고, 저장한 편집을 이어갈 수 있습니다.</p>
+            <ul class="product-features" aria-label="Train Gallery 주요 기능"><li>날짜별 영상 기록</li><li>클립·자막 편집</li><li>브이로그 제작</li></ul>
+            <div class="product-links">
+              <a class="text-link" href="https://tndud2505-ops.github.io/Career_Profile/projects/train-gallery.html" target="_blank" rel="noopener noreferrer" aria-label="Train Gallery 제품 소개 보기, 새 창">제품 소개 보기 <svg class="icon" aria-hidden="true"><use href="#arrow-out" /></svg></a>
+              <a class="secondary-link" href="https://github.com/tndud2505-ops/Train-Gallery-Downloads/releases/tag/v1.0.0-27-media-menu-20261011" target="_blank" rel="noopener noreferrer">Android 시험판 <svg class="icon" aria-hidden="true"><use href="#arrow-out" /></svg></a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="about section-shell" aria-labelledby="about-title">
+      <h2 id="about-title">필요한 기능에 집중하고,<br class="desktop-break" /> 계속 나아지게 만듭니다.</h2>
+      <div class="about-copy">
+        <p>올라잇소프트는 수원에서 소프트웨어 제품을 설계하고 개발합니다. 정보를 비교하는 서비스부터 창작 콘텐츠와 개발 도구까지, 서로 다른 문제에 맞는 사용 경험을 만듭니다.</p>
+        <p>사용하는 흐름을 직접 살피고, 필요한 기능과 화면을 꾸준히 개선합니다.</p>
+      </div>
+    </section>
+    <section id="contact" class="contact" aria-labelledby="contact-title">
+      <div class="contact-inner section-shell">
+        <h2 id="contact-title">제품에 대한 이야기,<br />함께 나눠요.</h2>
+        <div class="contact-details">
+          <div class="contact-item"><svg class="icon" aria-hidden="true"><use href="#mail" /></svg><div><a class="contact-email" href="mailto:support@allrightsoftware.com">support@allrightsoftware.com</a><p>제품 문의와 피드백을 기다립니다.</p></div></div>
+          <div class="contact-item"><svg class="icon" aria-hidden="true"><use href="#location" /></svg><p>Suwon, Republic of Korea</p></div>
+        </div>
+      </div>
+      <footer class="site-footer section-shell">
+        <div><a href="#top">ALLRIGHTSOFT</a><p>&copy; 2026 AllrightSoft. All rights reserved.</p></div>
+        <a class="footer-link" href="https://github.com/tndud2505-ops" target="_blank" rel="noopener noreferrer">GitHub <svg class="icon" aria-hidden="true"><use href="#arrow-out" /></svg></a>
+      </footer>
+    </section>
+  </main>
+
+  <dialog class="image-dialog" aria-labelledby="image-caption">
+    <div class="dialog-toolbar"><p id="image-caption"></p><button class="dialog-close" type="button" aria-label="이미지 닫기"><svg class="icon" aria-hidden="true"><use href="#close" /></svg></button></div>
+    <div class="dialog-image-wrap"><img class="dialog-image" alt="" /></div>
+    <a class="dialog-original" target="_blank" rel="noopener noreferrer">원본 크기로 보기 <svg class="icon" aria-hidden="true"><use href="#arrow-out" /></svg></a>
+  </dialog>
+</body>
 </html>
