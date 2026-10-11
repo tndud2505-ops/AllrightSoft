@@ -42,11 +42,6 @@ a:focus-visible,button:focus-visible { outline:3px solid #7faeff; outline-offset
 .hero-screen { border:1px solid #dce4ed; border-radius:5px; box-shadow:0 20px 42px -20px rgba(20,45,71,.28); }
 .hero-screen-primary { position:absolute; top:14px; left:0; width:100%; }
 .hero-screen-secondary { position:absolute; right:-10px; bottom:0; width:75%; }
-.focus-areas { display:grid; grid-template-columns:repeat(3,1fr); padding-block:32px; border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
-.focus-areas > div { padding-left:44px; border-left:1px solid var(--line); }
-.focus-areas > div:first-child { padding-left:0; border-left:0; }
-.focus-areas h2 { font-size:20px; font-weight:700; letter-spacing:-.015em; }
-.focus-areas p { margin-top:4px; font-size:16px; color:var(--muted); }
 .products { padding-block:96px 100px; }
 .section-heading h2 { font-size:clamp(32px,3.4vw,48px); font-weight:740; letter-spacing:-.035em; line-height:1.3; }
 .section-heading > p { margin-top:18px; font-size:18px; color:var(--muted); }
@@ -134,10 +129,6 @@ a:focus-visible,button:focus-visible { outline:3px solid #7faeff; outline-offset
   .hero-media { width:min(100%,640px); height:450px; margin-inline:auto; }
   .hero-screen-primary { top:0; }
   .hero-screen-secondary { width:70%; }
-  .focus-areas { padding-block:24px; }
-  .focus-areas > div { padding-left:20px; }
-  .focus-areas h2 { font-size:17px; }
-  .focus-areas p { font-size:13px; }
   .products { padding-block:68px; }
   .section-heading > p { font-size:16px; }
   .product-grid { row-gap:48px; column-gap:28px; }
@@ -169,10 +160,6 @@ a:focus-visible,button:focus-visible { outline:3px solid #7faeff; outline-offset
   .primary-link { min-height:52px; margin-top:24px; padding:12px 19px; font-size:16px; }
   .hero-media { height:clamp(260px,74vw,370px); }
   .hero-screen-secondary { width:77%; }
-  .focus-areas { grid-template-columns:1fr; gap:15px; }
-  .focus-areas > div,.focus-areas > div:first-child { display:flex; align-items:baseline; justify-content:space-between; gap:14px; padding:0; border:0; }
-  .focus-areas h2 { font-size:15px; }
-  .focus-areas p { margin:0; font-size:13px; text-align:right; }
   .products { padding-block:52px; }
   .section-heading h2 { font-size:30px; }
   .section-heading > p { margin-top:14px; font-size:15px; }
