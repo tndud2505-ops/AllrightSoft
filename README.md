@@ -69,8 +69,10 @@ the official English headings, and Train Gallery links directly to Google Play.
 - `robots.txt` allows crawling and advertises the sitemap.
 - The issued Naver verification tag is in the homepage HTML head. Publishing,
   Naver ownership confirmation, sitemap submission, and indexing remain pending.
-- A Google verification TXT record was observed in public DNS. The primary is
-  checking Search Console access; no new Google token or DNS change is included.
+- The primary confirmed the existing verified Google Search Console domain
+  property for `allrightsoftware.com`: 1 indexed page and 0 submitted sitemaps.
+  Sitemap submission remains pending until deployment; no new Google token or
+  DNS change is included.
 - Local changes require primary review before push or deployment. No new landing
   pages, app changes, CNAME changes, or email-routing changes are included.
 
