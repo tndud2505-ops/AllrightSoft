@@ -67,16 +67,23 @@ the official English headings, and Train Gallery links directly to Google Play.
 - `sitemap.xml` lists only the existing homepage on this domain; external app
   stores and portfolio pages are not sitemap entries.
 - `robots.txt` allows crawling and advertises the sitemap.
-- The issued Naver verification tag is in the homepage HTML head. Publishing,
-  Naver ownership confirmation, sitemap submission, and indexing remain pending.
-- The primary confirmed the existing verified Google Search Console domain
-  property for `allrightsoftware.com`: 1 indexed page and 0 submitted sitemaps.
-  Sitemap submission remains pending until deployment; no new Google token or
-  DNS change is included.
-- Local changes require primary review before push or deployment. No new landing
-  pages, app changes, CNAME changes, or email-routing changes are included.
+- GitHub Pages run `42993034811` successfully published commit `f8b9ab4`.
+  The primary verified HTTP 200 for the homepage, robots and sitemap; the served
+  head contains the issued Naver tag, both Korean product names are visible, and
+  the Google Play link targets the requested package.
+- Google Search Console already had the verified domain property and indexed
+  homepage. The new sitemap was submitted on November 11 and reports success
+  with one discovered page. Google also confirmed the updated homepage's
+  indexing request was added to its crawl queue. No new token or DNS change
+  was needed.
+- Naver ownership verification completed after the user authorized security
+  character entry. `sitemap.xml` was registered at 18:18:47 KST on November 11,
+  and homepage collection request 1 was accepted at 18:19:17 KST. Search result
+  appearance is not yet verified.
+- No new landing pages, app changes, CNAME changes, or email-routing changes
+  are included.
 
-After publication, verify the served tag and sitemap, complete the relevant
-ownership checks, and submit the sitemap through the authorized consoles.
+Preserve the public proof and sitemap in future site releases. Google confirmed
+the existing homepage is indexed; the updated wording is queued for recrawling.
 Registration and sitemap submission do not establish that either product has
 been indexed or guarantee its search ranking.
