@@ -26,7 +26,7 @@ use a fresh local port instead of clearing another project's browser data.
 - Virtual MCU: https://virtual-mcu-training-env.pages.dev/
 - Obsidian Context Map for Jira: https://marketplace.atlassian.com/apps/1923219004/obsidian-context-map-for-jira
 - Train Gallery introduction: https://tndud2505-ops.github.io/Career_Profile/projects/train-gallery.html
-- Train Gallery Android trial: https://github.com/tndud2505-ops/Train-Gallery-Downloads/releases/tag/v1.0.0-27-media-menu-20261011
+- Train Gallery Google Play: https://play.google.com/store/apps/details?id=com.trainingapp.traingallery&hl=en_US
 
 The public page uses screenshots from the actual products. No generated illustration is shipped with the site.
 
@@ -51,8 +51,30 @@ The public page uses screenshots from the actual products. No generated illustra
 | EMOTOWN | Loaded Korean 129-set gallery, captured 2026-10-11. |
 | Virtual MCU | Live circuit/pin-path view, captured 2026-10-11; idle/build-required state, not proof of firmware execution. |
 | Jira app | Latest available installed-app sample project screen dated 2026-09-09. Marketplace listing verified 2026-10-11 as v2.9.0 / Try it free; no customer-adoption claims. |
-| Train Gallery | Two user-approved actual Android captures supplied 2026-10-11 and already published in the portfolio; the trial link is a test-signed prerelease, not a Play Store release. |
+| Train Gallery | Two user-approved actual Android captures supplied 2026-10-11 and already published in the portfolio; the Google Play link identifies the app without asserting availability or price. |
 
 Keep screenshots at their intrinsic ratios. New screenshots should receive dated
 filenames; preserve previous assets for recovery. Generated layout concepts are
 design references only and must not be presented as actual product screens.
+
+## Search registration · 2026-11-11
+
+The existing homepage introduces Train Gallery (트레인갤러리) and Obsidian
+Context Map for Jira (지라 옵시디언). Their Korean names are visible beside
+the official English headings, and Train Gallery links directly to Google Play.
+
+- Canonical site: `https://allrightsoftware.com/`.
+- `sitemap.xml` lists only the existing homepage on this domain; external app
+  stores and portfolio pages are not sitemap entries.
+- `robots.txt` allows crawling and advertises the sitemap.
+- The issued Naver verification tag is in the homepage HTML head. Publishing,
+  Naver ownership confirmation, sitemap submission, and indexing remain pending.
+- A Google verification TXT record was observed in public DNS. The primary is
+  checking Search Console access; no new Google token or DNS change is included.
+- Local changes require primary review before push or deployment. No new landing
+  pages, app changes, CNAME changes, or email-routing changes are included.
+
+After publication, verify the served tag and sitemap, complete the relevant
+ownership checks, and submit the sitemap through the authorized consoles.
+Registration and sitemap submission do not establish that either product has
+been indexed or guarantee its search ranking.
