@@ -17,8 +17,8 @@
   <title>올라잇소프트 AllrightSoft · 서비스와 앱</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="preload" href="assets/fonts/PretendardVariable.woff2" as="font" type="font/woff2" crossorigin />
-  <link rel="stylesheet" href="styles.css?v=20261113-final" />
-  <script src="script.js?v=20261113-final" defer></script>
+  <link rel="stylesheet" href="styles.css?v=20261113-left" />
+  <script src="script.js?v=20261113-left" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#showroom">제품으로 건너뛰기</a>
@@ -32,31 +32,35 @@
   </svg>
   <header class="header shell">
     <a class="brand" href="#showroom">ALLRIGHTSOFT</a>
-    <nav class="header-nav" aria-label="주요 메뉴">
-      <details class="nav-menu"><summary>서비스</summary><div class="nav-panel"><button type="button" data-target="k-stock">K Stock</button><button type="button" data-target="used-pick-web">USED PICK</button><button type="button" data-target="woori-journey">우리여정</button><button type="button" data-target="chat-analysis">대화 분석</button></div></details>
-      <details class="nav-menu"><summary>앱</summary><div class="nav-panel"><button type="button" data-target="train-gallery">Train Gallery</button><button type="button" data-target="woori-journey">우리여정</button><button type="button" data-target="used-pick-app">USED PICK 앱</button></div></details>
-      <details class="nav-menu"><summary>교육·도구</summary><div class="nav-panel"><button type="button" data-target="virtual-mcu">Virtual MCU</button><button type="button" data-target="jira">Jira Obsidian</button></div></details>
-      <details class="nav-menu"><summary>콘텐츠</summary><div class="nav-panel"><button type="button" data-target="coteepet">COTEEPET</button><button type="button" data-target="emotown">EMOTOWN</button></div></details>
-      <a href="#contact">문의</a>
-    </nav>
   </header>
   <main id="showroom" class="showroom shell">
-    <nav class="product-index" aria-label="제품 선택">
-      <div class="product-index-primary">
-        <button type="button" data-product="k-stock" aria-label="K Stock" aria-pressed="true" aria-controls="product-stage"><span class="product-name">K Stock</span></button>
-        <button type="button" data-product="used-pick-web" aria-label="USED PICK" aria-pressed="false" aria-controls="product-stage"><span class="product-name">USED PICK</span></button>
-        <button type="button" data-product="train-gallery" aria-label="Train Gallery" aria-pressed="false" aria-controls="product-stage"><span class="product-name">Train Gallery</span></button>
-        <button type="button" data-product="woori-journey" aria-label="우리여정" aria-pressed="false" aria-controls="product-stage"><span class="product-name">우리여정</span></button>
-        <button type="button" data-product="used-pick-app" aria-label="USED PICK 앱" aria-pressed="false" aria-controls="product-stage"><span class="product-name">USED PICK 앱</span></button>
-      </div>
-      <div class="product-index-secondary">
-        <button type="button" data-product="jira" aria-label="Jira Obsidian" aria-pressed="false" aria-controls="product-stage"><span class="product-name">Jira Obsidian</span></button>
-        <button type="button" data-product="virtual-mcu" aria-label="Virtual MCU" aria-pressed="false" aria-controls="product-stage"><span class="product-name">Virtual MCU</span></button>
-        <button type="button" data-product="chat-analysis" aria-label="대화 분석" aria-pressed="false" aria-controls="product-stage"><span class="product-name">대화 분석</span></button>
-        <button type="button" data-product="coteepet" aria-label="COTEEPET" aria-pressed="false" aria-controls="product-stage"><span class="product-name">COTEEPET</span></button>
-        <button type="button" data-product="emotown" aria-label="EMOTOWN" aria-pressed="false" aria-controls="product-stage"><span class="product-name">EMOTOWN</span></button>
-      </div>
-    </nav>
+    <details class="product-browser" open>
+      <summary>서비스 목록</summary>
+      <nav class="product-index" aria-label="서비스 선택">
+        <section class="index-group" aria-labelledby="index-services">
+          <h2 id="index-services">서비스</h2>
+          <button type="button" data-product="k-stock" aria-label="K Stock" aria-pressed="true" aria-controls="product-stage"><span class="product-name">K Stock</span></button>
+          <button type="button" data-product="used-pick-web" aria-label="USED PICK" aria-pressed="false" aria-controls="product-stage"><span class="product-name">USED PICK</span></button>
+        </section>
+        <section class="index-group" aria-labelledby="index-apps">
+          <h2 id="index-apps">앱</h2>
+          <button type="button" data-product="train-gallery" aria-label="Train Gallery" aria-pressed="false" aria-controls="product-stage"><span class="product-name">Train Gallery</span></button>
+          <button type="button" data-product="woori-journey" aria-label="우리여정" aria-pressed="false" aria-controls="product-stage"><span class="product-name">우리여정</span></button>
+          <button type="button" data-product="used-pick-app" aria-label="USED PICK 앱" aria-pressed="false" aria-controls="product-stage"><span class="product-name">USED PICK 앱</span></button>
+        </section>
+        <section class="index-group" aria-labelledby="index-tools">
+          <h2 id="index-tools">교육·도구</h2>
+          <button type="button" data-product="virtual-mcu" aria-label="Virtual MCU" aria-pressed="false" aria-controls="product-stage"><span class="product-name">Virtual MCU</span></button>
+          <button type="button" data-product="jira" aria-label="Jira Obsidian" aria-pressed="false" aria-controls="product-stage"><span class="product-name">Jira Obsidian</span></button>
+          <button type="button" data-product="chat-analysis" aria-label="대화 분석" aria-pressed="false" aria-controls="product-stage"><span class="product-name">대화 분석</span></button>
+        </section>
+        <section class="index-group" aria-labelledby="index-content">
+          <h2 id="index-content">콘텐츠</h2>
+          <button type="button" data-product="coteepet" aria-label="COTEEPET" aria-pressed="false" aria-controls="product-stage"><span class="product-name">COTEEPET</span></button>
+          <button type="button" data-product="emotown" aria-label="EMOTOWN" aria-pressed="false" aria-controls="product-stage"><span class="product-name">EMOTOWN</span></button>
+        </section>
+      </nav>
+    </details>
     <section id="product-stage" class="product-stage" aria-labelledby="product-title" data-active-product="k-stock">
       <div class="product-heading">
         <div class="product-title-row">

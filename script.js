@@ -21,7 +21,11 @@ const note=document.querySelector('#product-note');
 const dialog=document.querySelector('.image-dialog');
 const reducedMotion=matchMedia('(prefers-reduced-motion: reduce)');
 const finePointer=matchMedia('(hover:hover) and (pointer:fine)');
-const navMenus=[...document.querySelectorAll('.nav-menu')];
+const productBrowser=document.querySelector('.product-browser');
+const compactLayout=matchMedia('(max-width:760px)');
+function syncProductBrowser(){productBrowser.open=!compactLayout.matches;}
+syncProductBrowser();
+compactLayout.addEventListener('change',syncProductBrowser);
 let activeId='k-stock';
 let transitionId=0;
 let hoverTimer;
@@ -75,7 +79,11 @@ async function activateProduct(id){
   mediaImages.animate([{opacity:0,transform:'translateY(15px) scale(.985)'},{opacity:1,transform:'translateY(0) scale(1)'}],{duration:420,easing:'cubic-bezier(.2,.7,.2,1)'});
 }
 indexButtons.forEach((button,index)=>{
-  button.addEventListener('click',()=>{clearTimeout(hoverTimer);activateProduct(button.dataset.product);});
+  button.addEventListener('click',()=>{
+    clearTimeout(hoverTimer);
+    activateProduct(button.dataset.product);
+    if(compactLayout.matches){productBrowser.open=false;productBrowser.querySelector('summary').focus();}
+  });
   button.addEventListener('pointerenter',()=>{
     if(!finePointer.matches)return;
     clearTimeout(hoverTimer);
@@ -96,18 +104,11 @@ indexButtons.forEach((button,index)=>{
     activateProduct(visibleButtons[target].dataset.product);
   });
 });
-navMenus.forEach(menu=>{
-  menu.addEventListener('toggle',()=>{if(menu.open)navMenus.forEach(other=>{if(other!==menu)other.open=false;});});
-  menu.querySelectorAll('[data-target]').forEach(button=>button.addEventListener('click',()=>{
-    clearTimeout(hoverTimer);
-    activateProduct(button.dataset.target);
-    menu.open=false;
-    menu.querySelector('summary').focus();
-  }));
-});
-document.addEventListener('click',event=>{if(!event.target.closest('.nav-menu'))navMenus.forEach(menu=>menu.open=false);});
-document.addEventListener('keydown',event=>{
-  if(event.key==='Escape')navMenus.forEach(menu=>{if(menu.open){menu.open=false;menu.querySelector('summary').focus();}});
+productBrowser.addEventListener('keydown',event=>{
+  if(event.key==='Escape'&&compactLayout.matches&&productBrowser.open){
+    productBrowser.open=false;
+    productBrowser.querySelector('summary').focus();
+  }
 });
 media.addEventListener('pointermove',event=>{
   if(reducedMotion.matches||!finePointer.matches)return;

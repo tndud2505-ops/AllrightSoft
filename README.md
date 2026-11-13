@@ -8,8 +8,9 @@ HTTPS and existing email/DNS routing when updating the site.
 
 - Product priority: K Stock → USED PICK → Train Gallery → 우리여정 → USED PICK 앱,
   followed by Jira Obsidian, Virtual MCU, 대화 분석, COTEEPET and EMOTOWN.
-- Desktop keeps an ordered selection rail. The header has expandable 서비스,
-  앱, 교육·도구 and 콘텐츠 menus. Mobile uses the header menus directly.
+- The header contains the wordmark only. Desktop groups the left selection rail
+  into 서비스 / 앱 / 교육·도구 / 콘텐츠; Virtual MCU appears under 교육·도구.
+  Mobile folds the same grouped list in place and closes it after selection.
 - Each selection shows its actual purpose, a large screen and `서비스로 가기`
   beside the title. All destinations are actual services or their official store;
   there are no intermediary personal-portfolio links.
@@ -62,8 +63,9 @@ The final source replaces the former banner/card catalog. Recovery base:
 `16b0c48580ac8d7687a021d56d0968edee94d094`.
 
 Before publication, all ten selections loaded their images and intended links;
-1440px desktop and 390px/320px mobile showed no horizontal overflow. The header
-menus, image dialog/Escape/focus return and title-level actions were checked.
+1440px desktop and 390px/320px mobile showed no horizontal overflow. The grouped left
+list, mobile collapse, image dialog/Escape/focus return and title-level actions
+were checked.
 Protected hosting/search files remain byte-identical.
 
 ## Search registration

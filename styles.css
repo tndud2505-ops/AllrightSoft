@@ -20,22 +20,13 @@ h1,h2,p,a,button{word-break:keep-all;overflow-wrap:break-word}
 .skip-link:focus{transform:translateY(0)}
 .header{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:92px;border-bottom:1px solid var(--line);position:relative;z-index:5}
 .brand{font-size:clamp(23px,2.4vw,34px);font-weight:800;letter-spacing:-.045em;line-height:1.15}
-.header-nav{display:flex;align-items:center;gap:30px;font-size:16px;font-weight:550}
-.header-nav>a,.nav-menu summary{display:flex;align-items:center;gap:9px;padding-block:18px;cursor:pointer;list-style:none;white-space:nowrap;transition:color .18s}
-.nav-menu summary::-webkit-details-marker{display:none}
-.nav-menu summary::after{content:"";width:6px;height:6px;border-right:1.4px solid;border-bottom:1.4px solid;transform:translateY(-2px) rotate(45deg);transition:transform .2s}
-.nav-menu[open] summary::after{transform:translateY(1px) rotate(225deg)}
-.header-nav>a:hover,.nav-menu summary:hover,.nav-menu[open] summary{color:var(--green)}
-.nav-menu{position:relative}
-.nav-panel{position:absolute;top:100%;right:-18px;min-width:215px;padding:10px;background:#fff;border:1px solid var(--line);border-radius:4px;box-shadow:0 12px 32px -20px #1e332b55}
-.nav-panel button{display:block;width:100%;min-height:44px;padding:10px 13px;border:0;text-align:left;white-space:nowrap;font-size:15px;font-weight:500}
-.nav-panel button:hover,.nav-panel button:focus-visible{background:#f0f5ef;color:var(--green)}
 .showroom{display:grid;grid-template-columns:var(--rail) minmax(0,1fr);gap:var(--gap);padding-block:42px 36px;min-height:730px}
-.product-index{display:flex;flex-direction:column;align-self:stretch;border-right:1px solid var(--line);padding:4px 24px 8px 0}
-.product-index-primary,.product-index-secondary{display:flex;flex-direction:column;gap:5px}
-.product-index-secondary{margin-top:26px;padding-top:21px;border-top:1px solid #e8ece5}
-.product-index button{position:relative;display:block;min-height:52px;width:100%;border:0;border-radius:4px;padding:12px 11px 12px 25px;text-align:left;font-size:19px;font-weight:540;letter-spacing:-.02em;line-height:1.4;transition:color .18s,background .18s,transform .25s}
-.product-index-secondary button{font-size:17px;font-weight:450;min-height:47px}
+.product-browser{min-width:0;align-self:stretch;border-right:1px solid var(--line);padding:2px 24px 8px 0}
+.product-browser>summary{display:none}
+.product-index{display:flex;flex-direction:column;gap:25px}
+.index-group h2{margin:0 0 7px;padding-left:12px;color:#56664f;font-size:15px;font-weight:600;letter-spacing:-.015em;line-height:1.5}
+.index-group button+button{margin-top:3px}
+.product-index button{position:relative;display:block;min-height:45px;width:100%;border:0;border-radius:4px;padding:9px 11px 9px 25px;text-align:left;font-size:18px;font-weight:540;letter-spacing:-.02em;line-height:1.4;transition:color .18s,background .18s,transform .25s}
 .product-index button::before{content:"";position:absolute;left:10px;top:50%;width:5px;height:5px;border-radius:50%;background:var(--green);opacity:0;transform:translateY(-50%)}
 .product-index button[aria-pressed="true"]{background:#f0f5ef;color:var(--green);font-weight:680}
 .product-index button[aria-pressed="true"]::before{opacity:1}
@@ -76,10 +67,19 @@ h1,h2,p,a,button{word-break:keep-all;overflow-wrap:break-word}
 .dialog-images{display:flex;justify-content:center;align-items:center;gap:20px;background:var(--media);padding:10px}
 .dialog-images img{width:auto;height:auto;max-width:100%;max-height:calc(100dvh - 150px);object-fit:contain}
 .dialog-images[data-count="2"] img{max-width:calc(50% - 10px)}
-@media(min-width:1600px){.showroom{min-height:780px}.product-heading{min-height:190px}.product-index button{min-height:56px;font-size:20px}.product-index-secondary button{font-size:18px;min-height:50px}}
-@media(max-width:1100px){:root{--rail:200px;--gap:28px;--shell:calc(100% - 56px)}.header-nav{gap:22px;font-size:15px}.product-index{padding-right:18px}.product-index button{font-size:16px;padding-left:22px}.product-index-secondary button{font-size:15px}.product-heading h1{font-size:46px}.product-description{font-size:17px}.product-title-row{gap:15px}.product-link{font-size:14px;gap:6px}.product-media[data-format="phones"]{height:440px}.contact{gap:12px 25px}.contact a{font-size:16px}}
-@media(max-width:860px){.header{flex-wrap:wrap;gap:0;padding-top:22px}.header-nav{width:100%;justify-content:space-between;position:relative;gap:12px;font-size:15px;margin-top:8px}.header-nav>a,.nav-menu summary{padding-block:16px}.nav-menu{position:static}.nav-panel{right:0;left:0;top:100%;min-width:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2px}.product-title-row{align-items:flex-start}.product-heading h1{font-size:40px}}
-@media(max-width:760px){:root{--shell:calc(100% - 40px)}.brand{font-size:26px}.header-nav{font-size:14px}.header-nav>a,.nav-menu summary{gap:7px}.showroom{display:block;padding-block:29px 28px;min-height:0}.product-index{display:none}.product-heading{min-height:0;padding-bottom:22px}.product-title-row{align-items:center;gap:12px}.product-heading h1{font-size:36px;line-height:1.2}.product-link{font-size:14px;padding:8px 0;gap:6px}.product-link .icon{width:18px;height:18px}.product-description{font-size:17px;margin-top:14px;line-height:1.75}.product-note{font-size:12px}.product-media{aspect-ratio:16/11;padding:10px}.product-media[data-format="phones"]{aspect-ratio:auto;height:370px;padding:16px 14px}.media-images{gap:14px}.product-media[data-format="phones"] .media-images img{max-width:calc(50% - 7px)}.contact{align-items:flex-start;gap:4px 25px;padding-block:22px 28px;min-height:0}.contact h2{width:100%;border-right:0;padding-right:0;margin-bottom:5px;font-size:22px}.contact a{min-height:40px;font-size:15px}.contact .icon{width:18px;height:18px}.image-dialog{padding:12px}.dialog-images{gap:10px;padding:4px}}
-@media(max-width:380px){:root{--shell:calc(100% - 32px)}.brand{font-size:24px}.header-nav{font-size:13px;gap:8px}.header-nav>a,.nav-menu summary{gap:6px}.nav-panel{padding:7px}.nav-panel button{font-size:13px;padding:10px 8px}.product-heading h1{font-size:29px}.product-link{font-size:12px}.product-description{font-size:16px}.product-media[data-format="phones"]{height:320px}}
+@media(min-width:1600px){.showroom{min-height:780px}.product-heading{min-height:190px}.product-index button{min-height:48px;font-size:19px}}
+@media(max-width:1100px){:root{--rail:200px;--gap:28px;--shell:calc(100% - 56px)}.product-browser{padding-right:18px}.product-index button{font-size:16px;padding-left:22px}.product-heading h1{font-size:46px}.product-description{font-size:17px}.product-title-row{gap:15px}.product-link{font-size:14px;gap:6px}.product-media[data-format="phones"]{height:440px}.contact{gap:12px 25px}.contact a{font-size:16px}}
+@media(max-width:860px){.header{min-height:82px}.product-title-row{align-items:flex-start}.product-heading h1{font-size:40px}}
+@media(max-width:760px){:root{--shell:calc(100% - 40px)}.brand{font-size:26px}.showroom{display:block;padding-block:29px 28px;min-height:0}.product-browser{border-right:0;border-bottom:1px solid var(--line);padding:0 0 14px;margin-bottom:24px}
+.product-browser>summary{display:flex;align-items:center;justify-content:space-between;min-height:36px;list-style:none;color:#4b5c4e;font-size:14px;font-weight:550;cursor:pointer}
+.product-browser>summary::-webkit-details-marker{display:none}
+.product-browser>summary::after{content:"";width:7px;height:7px;border-right:1.5px solid;border-bottom:1.5px solid;transform:rotate(45deg);margin-right:4px;transition:transform .2s}
+.product-browser[open]>summary::after{transform:rotate(225deg)}
+.product-index{gap:20px;padding:18px 0 5px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr))}
+.index-group h2{padding-left:8px;font-size:13px;margin-bottom:5px}
+.product-index button{min-height:40px;font-size:14px;padding:8px 8px;line-height:1.4}
+.product-index button::before{display:none}
+.product-index button:hover{transform:none}.product-heading{min-height:0;padding-bottom:22px}.product-title-row{align-items:center;gap:12px}.product-heading h1{font-size:36px;line-height:1.2}.product-link{font-size:14px;padding:8px 0;gap:6px}.product-link .icon{width:18px;height:18px}.product-description{font-size:17px;margin-top:14px;line-height:1.75}.product-note{font-size:12px}.product-media{aspect-ratio:16/11;padding:10px}.product-media[data-format="phones"]{aspect-ratio:auto;height:370px;padding:16px 14px}.media-images{gap:14px}.product-media[data-format="phones"] .media-images img{max-width:calc(50% - 7px)}.contact{align-items:flex-start;gap:4px 25px;padding-block:22px 28px;min-height:0}.contact h2{width:100%;border-right:0;padding-right:0;margin-bottom:5px;font-size:22px}.contact a{min-height:40px;font-size:15px}.contact .icon{width:18px;height:18px}.image-dialog{padding:12px}.dialog-images{gap:10px;padding:4px}}
+@media(max-width:380px){:root{--shell:calc(100% - 32px)}.brand{font-size:24px}.product-heading h1{font-size:29px}.product-link{font-size:12px}.product-description{font-size:16px}.product-media[data-format="phones"]{height:320px}}
 @media(hover:none){.expand-hint{opacity:1;transform:none}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}.media-images{transform:none!important}}
