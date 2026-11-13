@@ -1,22 +1,3 @@
-const menuButton = document.querySelector('.menu-button');
-const siteNav = document.querySelector('.site-nav');
-function closeMenu() {
-  siteNav?.classList.remove('is-open');
-  menuButton?.setAttribute('aria-expanded', 'false');
-}
-menuButton?.addEventListener('click', () => {
-  const isOpen = siteNav.classList.toggle('is-open');
-  menuButton.setAttribute('aria-expanded', String(isOpen));
-});
-siteNav?.addEventListener('click', (event) => {
-  if (event.target instanceof Element && event.target.closest('a')) closeMenu();
-});
-document.addEventListener('keydown', (event) => {
-  if (event.key === 'Escape' && siteNav?.classList.contains('is-open')) {
-    closeMenu();
-    menuButton?.focus();
-  }
-});
 const filters = document.querySelector('.product-filters');
 const products = [...document.querySelectorAll('.product[data-category]')];
 const filterStatus = document.querySelector('#filter-status');

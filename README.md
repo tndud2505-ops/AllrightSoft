@@ -1,6 +1,7 @@
-# AllrightSoft company site
+# AllrightSoft product catalog
 
-Static company and product portfolio site for 올라잇소프트 (AllrightSoft).
+Static product catalog for 올라잇소프트 (AllrightSoft). The homepage opens
+directly on product descriptions, screenshots, category filters and product links.
 
 Production: https://allrightsoftware.com/
 
@@ -27,8 +28,31 @@ use a fresh local port instead of clearing another project's browser data.
 - Obsidian Context Map for Jira: https://marketplace.atlassian.com/apps/1923219004/obsidian-context-map-for-jira
 - Train Gallery introduction: https://tndud2505-ops.github.io/Career_Profile/projects/train-gallery.html
 - Train Gallery Google Play: https://play.google.com/store/apps/details?id=com.trainingapp.traingallery&hl=en_US
+- 우리여정 introduction: https://tndud2505-ops.github.io/Career_Profile/projects/dulharu.html
+- 대화 분석 introduction: https://tndud2505-ops.github.io/Career_Profile/projects/saigyeol-chat-analysis.html
 
 The public page uses screenshots from the actual products. No generated illustration is shipped with the site.
+
+## Current catalog · 2026-11-13
+
+- Nine public product introductions, synchronized with Career Management's
+  `career_system/career_dossier/source/CAREER_SOURCE_MASTER.json` and
+  `career_system/wiki/product_features.md`. Company-site product order remains
+  independent of the personal portfolio.
+- Company introduction, marketing hero, location, separate contact section and
+  GitHub profile link have been removed. A small product-inquiry email remains
+  in the footer. Navigation stays visible on mobile without a menu toggle.
+- 우리여정 and 대화 분석 link only to their existing public introductions.
+  The private development URLs and family screenshots are not copied here.
+  Android trial / in-development labels distinguish these from released products.
+- Train Gallery uses the current approved home and vlog images from October 27
+  at their full portrait ratios, with a Korean Google Play link. The earlier
+  screenshots are retained as recovery assets.
+- Jira's display name is `Jira Obsidian · 지라 옵시디언`; the existing official
+  Obsidian Context Map for Jira Marketplace link is preserved.
+- Keep the canonical URL, Naver verification, robots, sitemap, CNAME, HTTPS and
+  mail routing intact. Company-site edits alone do not regenerate resumes,
+  career-description documents or the personal Career_Profile homepage.
 
 ## October 2026 refresh
 
