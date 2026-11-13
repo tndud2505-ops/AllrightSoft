@@ -120,7 +120,16 @@ a:focus-visible,button:focus-visible { outline:3px solid #7faeff; outline-offset
 .site-footer > a { display:inline-flex; align-items:center; gap:6px; min-height:44px; color:var(--ink); }
 .site-footer .icon { width:16px; height:16px; }
 .site-footer > a:hover { text-decoration:underline; text-underline-offset:4px; }
-.product-preview { padding-top:28px; border-top:1px solid var(--line); }
-.product-preview .product-category { margin-top:0; }
 .product-note { margin-top:12px; color:var(--muted); font-size:13px; line-height:1.65; }
 @media (max-width:560px) { .site-nav { display:flex; font-size:13px; white-space:nowrap; } }
+
+.product-highlight { padding-top:28px; }
+.product-banner { display:block; background:#faf8f1; }
+.product-banner picture,.product-banner img { display:block; width:100%; }
+.product-banner img { height:auto; }
+.product-banner:hover { opacity:.96; }
+.product-highlight + .products { padding-top:40px; }
+@media (max-width:600px) {
+  .product-highlight { padding-top:20px; }
+  .product-highlight + .products { padding-top:32px; }
+}

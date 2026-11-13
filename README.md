@@ -1,7 +1,8 @@
 # AllrightSoft product catalog
 
 Static product catalog for 올라잇소프트 (AllrightSoft). The homepage opens
-directly on product descriptions, screenshots, category filters and product links.
+with a released-product banner, followed by screenshots, descriptions,
+category filters and direct product links.
 
 Production: https://allrightsoftware.com/
 
@@ -26,12 +27,14 @@ use a fresh local port instead of clearing another project's browser data.
 - EMOTOWN: https://emotown.com/ko/
 - Virtual MCU: https://virtual-mcu-training-env.pages.dev/
 - Obsidian Context Map for Jira: https://marketplace.atlassian.com/apps/1923219004/obsidian-context-map-for-jira
-- Train Gallery introduction: https://tndud2505-ops.github.io/Career_Profile/projects/train-gallery.html
-- Train Gallery Google Play: https://play.google.com/store/apps/details?id=com.trainingapp.traingallery&hl=en_US
-- 우리여정 introduction: https://tndud2505-ops.github.io/Career_Profile/projects/dulharu.html
-- 대화 분석 introduction: https://tndud2505-ops.github.io/Career_Profile/projects/saigyeol-chat-analysis.html
+- Train Gallery Google Play: https://play.google.com/store/apps/details?id=com.trainingapp.traingallery&hl=ko&gl=KR
+- 우리여정 web app: https://dulharu-dev.tndud2503.workers.dev/?lang=ko-KR
+- 우리여정 Android trial: https://github.com/tndud2505-ops/dulharu-android/releases/download/v0.2.20-journey.1/woori-journey-v0.2.20.apk
+- 대화 분석 web app: https://saigyeol-chat-analysis.tndud2503.workers.dev/
 
-The public page uses screenshots from the actual products. No generated illustration is shipped with the site.
+The page reuses actual product screenshots and approved promotional assets.
+Promotional compositions and sample records are not presented as newly captured
+native screens or private user content.
 
 ## Current catalog · 2026-11-13
 
@@ -39,15 +42,26 @@ The public page uses screenshots from the actual products. No generated illustra
   `career_system/career_dossier/source/CAREER_SOURCE_MASTER.json` and
   `career_system/wiki/product_features.md`. Company-site product order remains
   independent of the personal portfolio.
-- Company introduction, marketing hero, location, separate contact section and
+- Company introduction, company marketing hero, location, separate contact section and
   GitHub profile link have been removed. A small product-inquiry email remains
   in the footer. Navigation stays visible on mobile without a menu toggle.
-- 우리여정 and 대화 분석 link only to their existing public introductions.
-  The private development URLs and family screenshots are not copied here.
-  Android trial / in-development labels distinguish these from released products.
-- Train Gallery uses the current approved home and vlog images from October 27
-  at their full portrait ratios, with a Korean Google Play link. The earlier
-  screenshots are retained as recovery assets.
+- User correction: this is a product website. Every product has a relevant image,
+  and its main link opens the actual product, app store or public download.
+  Never route visitors to the owner's Career_Profile introduction. Simplifying
+  company copy does not authorize removing product banners, screenshots or
+  meaningful release labels.
+- Train Gallery's responsive November 11 Moa/calendar/vlog banner opens Google
+  Play directly. Its two full-frame native screenshots are from November 6.
+  Source: `C:/DeVelop/Training_App/docs/release/promo/2026-11-11-moa-calendar-vlog/`
+  and `docs/release/store/2026-11-06-cozy-promo/shared/raw/ko-KR/` in that repo.
+- 우리여정 uses the November 12 store feature graphic with documented synthetic
+  sample records, from `C:/DeVelop/couple/output/journey-intro-20261112/store/ko-KR/`.
+  Personal family screenshots are not copied. The actual web app and public
+  v0.2.20 Android trial are linked directly. Its Play listing returned 404 in
+  the current check; do not claim Google Play release from a review submission.
+- 대화 분석 uses the existing fictional-conversation report screen and opens
+  its working TXT import app directly. The previous private-only link routing
+  is superseded for this company catalog by the user's explicit correction.
 - Jira's display name is `Jira Obsidian · 지라 옵시디언`; the existing official
   Obsidian Context Map for Jira Marketplace link is preserved.
 - Keep the canonical URL, Naver verification, robots, sitemap, CNAME, HTTPS and
