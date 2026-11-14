@@ -36,6 +36,8 @@ h1,h2,p,a,button{word-break:keep-all;overflow-wrap:break-word}
 .product-title-row{display:flex;align-items:center;justify-content:flex-start;gap:24px}
 .product-heading h1{font-size:clamp(40px,4.5vw,65px);font-weight:680;letter-spacing:-.045em;line-height:1.16}
 .product-link{display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;gap:10px;min-height:44px;padding:9px 0 9px 12px;color:var(--green);font-size:16px;font-weight:600;white-space:nowrap;letter-spacing:-.025em}
+.product-link[aria-disabled="true"]{color:var(--muted);cursor:default}
+.product-link[aria-disabled="true"] .icon{display:none}
 .product-link .icon{width:20px;height:20px;transition:transform .2s}
 .product-link:hover .icon{transform:translate(3px,-3px)}
 .product-description{max-width:790px;margin-top:17px;font-size:19px;font-weight:430;color:#4b554f;letter-spacing:-.02em;line-height:1.75;text-wrap:pretty}
