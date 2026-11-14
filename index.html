@@ -18,7 +18,7 @@
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
   <link rel="preload" href="assets/fonts/PretendardVariable.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="stylesheet" href="styles.css?v=20261115-projects" />
-  <script src="script.js?v=20261115-projects" defer></script>
+  <script src="script.js?v=20261115-order" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#showroom">제품으로 건너뛰기</a>
@@ -38,31 +38,25 @@
       <summary>서비스 목록</summary>
       <nav class="product-index" aria-label="서비스 선택">
         <section class="index-group" aria-labelledby="index-services">
-          <h2 id="index-services">서비스</h2>
+          <h2 id="index-services">서비스 중</h2>
           <button type="button" data-product="k-stock" aria-label="K Stock" aria-pressed="true" aria-controls="product-stage"><span class="product-name">K Stock</span></button>
-          <button type="button" data-product="used-pick-web" aria-label="USED PICK" aria-pressed="false" aria-controls="product-stage"><span class="product-name">USED PICK</span></button>
-        </section>
-        <section class="index-group" aria-labelledby="index-apps">
-          <h2 id="index-apps">앱</h2>
           <button type="button" data-product="train-gallery" aria-label="Train Gallery" aria-pressed="false" aria-controls="product-stage"><span class="product-name">Train Gallery</span></button>
-          <button type="button" data-product="woori-journey" aria-label="우리여정" aria-pressed="false" aria-controls="product-stage"><span class="product-name">우리여정</span></button>
-          <button type="button" data-product="used-pick-app" aria-label="USED PICK 앱" aria-pressed="false" aria-controls="product-stage"><span class="product-name">USED PICK 앱</span></button>
-          <button type="button" data-product="mori-cam" aria-label="MORI CAM" aria-pressed="false" aria-controls="product-stage"><span class="product-name">MORI CAM</span></button>
-        </section>
-        <section class="index-group" aria-labelledby="index-games">
-          <h2 id="index-games">게임</h2>
-          <button type="button" data-product="doll-toss" aria-label="Doll Toss" aria-pressed="false" aria-controls="product-stage"><span class="product-name">Doll Toss</span></button>
-        </section>
-        <section class="index-group" aria-labelledby="index-tools">
-          <h2 id="index-tools">교육·도구</h2>
-          <button type="button" data-product="virtual-mcu" aria-label="Virtual MCU" aria-pressed="false" aria-controls="product-stage"><span class="product-name">Virtual MCU</span></button>
           <button type="button" data-product="jira" aria-label="Jira Obsidian" aria-pressed="false" aria-controls="product-stage"><span class="product-name">Jira Obsidian</span></button>
-          <button type="button" data-product="chat-analysis" aria-label="대화 분석" aria-pressed="false" aria-controls="product-stage"><span class="product-name">대화 분석</span></button>
+          <button type="button" data-product="used-pick-web" aria-label="USED PICK" aria-pressed="false" aria-controls="product-stage"><span class="product-name">USED PICK</span></button>
+          <button type="button" data-product="used-pick-app" aria-label="USED PICK 앱" aria-pressed="false" aria-controls="product-stage"><span class="product-name">USED PICK 앱</span></button>
+          <button type="button" data-product="woori-journey" aria-label="우리여정" aria-pressed="false" aria-controls="product-stage"><span class="product-name">우리여정</span></button>
         </section>
-        <section class="index-group" aria-labelledby="index-content">
-          <h2 id="index-content">콘텐츠</h2>
+        <section class="index-group" aria-labelledby="index-history">
+          <h2 id="index-history">폐기</h2>
           <button type="button" data-product="coteepet" aria-label="COTEEPET" aria-pressed="false" aria-controls="product-stage"><span class="product-name">COTEEPET</span></button>
           <button type="button" data-product="emotown" aria-label="EMOTOWN" aria-pressed="false" aria-controls="product-stage"><span class="product-name">EMOTOWN</span></button>
+        </section>
+        <section class="index-group" aria-labelledby="index-review">
+          <h2 id="index-review">검토 중</h2>
+          <button type="button" data-product="virtual-mcu" aria-label="Virtual MCU" aria-pressed="false" aria-controls="product-stage"><span class="product-name">Virtual MCU</span></button>
+          <button type="button" data-product="chat-analysis" aria-label="대화 분석" aria-pressed="false" aria-controls="product-stage"><span class="product-name">대화 분석</span></button>
+          <button type="button" data-product="mori-cam" aria-label="MORI CAM" aria-pressed="false" aria-controls="product-stage"><span class="product-name">MORI CAM</span></button>
+          <button type="button" data-product="doll-toss" aria-label="Doll Toss" aria-pressed="false" aria-controls="product-stage"><span class="product-name">Doll Toss</span></button>
         </section>
       </nav>
     </details>
@@ -73,7 +67,7 @@
           <a id="product-link" class="product-link" role="link" href="https://kstockclock.com/" target="_blank" rel="noopener noreferrer" aria-label="K Stock · 서비스로 가기, 새 창"><span>서비스로 가기</span><svg class="icon" aria-hidden="true"><use href="#out" /></svg></a>
         </div>
         <p id="product-description" class="product-description">국내 주식을 종목·테마로 찾고, 가격 차트와 보조지표를 함께 살펴보세요. 여러 종목을 나란히 비교하고 관심 있는 흐름을 탐색할 수 있습니다.</p>
-        <div class="product-details"><p id="product-note" class="product-note" hidden></p><a id="product-secondary-link" class="secondary-link" hidden target="_blank" rel="noopener noreferrer"></a></div>
+        <div class="product-details"><p id="product-note" class="product-note">서비스 중 · 웹 서비스</p><a id="product-secondary-link" class="secondary-link" hidden target="_blank" rel="noopener noreferrer"></a></div>
       </div>
       <button class="product-media" type="button" aria-label="K Stock 제품 화면 크게 보기">
         <span class="media-images"><img src="assets/final/k-stock-chart-20261113.png" width="1280" height="620" alt="K Stock 실제 LG전자 상세 차트와 이동평균선·거래량·공시일 화면" fetchpriority="high" /></span>
