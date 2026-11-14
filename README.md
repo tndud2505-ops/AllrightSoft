@@ -4,7 +4,7 @@ Interactive catalog at https://allrightsoftware.com/ . GitHub Pages publishes
 `main:/`. Preserve `CNAME`, canonical URL, Naver verification, robots, sitemap,
 HTTPS and existing email/DNS routing when updating the site.
 
-## Current presentation · 2026-11-13
+## Current presentation · 2026-11-14
 
 - Product priority: K Stock → USED PICK → Train Gallery → 우리여정 → USED PICK 앱,
   followed by Jira Obsidian, Virtual MCU, 대화 분석, COTEEPET and EMOTOWN.
@@ -43,11 +43,21 @@ retained for recovery.
 
 - Train Gallery opens the public Google Play package
   `com.trainingapp.traingallery`.
-- USED PICK web and Android are separate entries. Android package
-  `com.usedpick.app` is under first production review, with no public APK
-  confirmed. Its action honestly opens the functioning web service first.
-- 우리여정 opens its functioning web service and separately links the public
-  v0.2.20 Android trial APK. Google Play production review is not a release.
+- USED PICK web and Android remain separate entries. The Android action opens
+  the public Google Play listing for `com.usedpick.app`:
+  https://play.google.com/store/apps/details?id=com.usedpick.app .
+  Its official store title is `USED PICK — 중고 PC 부품 시세`; the web entry
+  continues to open https://used-pick.com/ .
+- 우리여정 opens the public Google Play listing for `app.dulharu.couple`:
+  https://play.google.com/store/apps/details?id=app.dulharu.couple .
+  The former trial APK action is removed. Family records and access restrictions
+  remain private.
+- Both listings were publicly available without login in South Korea on
+  November 14, with install text and `SoftwareApplication` / `InStock` metadata.
+  This confirms the Korean listings, not availability in every configured
+  country or physical-device installation. Source evidence:
+  `C:/DeVelop/Career_Management/career_system/products/operations-evidence/2026-11-14/app-public-status.json`.
+  A later update under review does not make an already-public app unreleased.
 - Jira Obsidian links the existing official Obsidian Context Map for Jira
   Marketplace listing. Do not describe development builds as public releases.
 - 대화 분석 opens its real TXT-import service. It explores conversation evidence;
