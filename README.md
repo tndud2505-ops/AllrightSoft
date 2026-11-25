@@ -4,21 +4,22 @@ Interactive catalog at https://allrightsoftware.com/ . GitHub Pages publishes
 `main:/`. Preserve `CNAME`, canonical URL, Naver verification, robots, sitemap,
 HTTPS and existing email/DNS routing when updating the site.
 
-## Current presentation · 2026-11-15
+## Current presentation · 2026-11-25
 
 - The single source for order and operational status is Career_Management's
   `career_system/career_dossier/source/CAREER_SOURCE_MASTER.json`, `personal_projects`.
   The catalog derives `operationalStatus` and order from it, without a separate
   priority/classification registry. Twelve entries represent eleven public
   projects because USED PICK keeps separate web and Android entries.
-- The plain left rail follows 서비스 중 → 폐기 → 검토 중. The source sequence is
-  preserved, including Virtual MCU → 대화 분석 → MORI CAM → Doll Toss at the bottom.
+- The plain left rail follows 서비스 중 → 폐기 → 검토 중. MORI CAM is last in
+  the operating group, directly after 우리여정 and before the discarded history.
+  The review group remains Virtual MCU → 대화 분석 → Doll Toss at the bottom.
   Platform/tool/game distinctions remain in each product's `kind` and detail line.
   Mobile folds the same list in place and closes it after selection.
 - Existing live-product destinations are preserved. 폐기 entries keep historical
   descriptions and `과거 사이트` links; this is an owner project decision, not
   evidence that a server/domain was shut down. 검토 중 entries retain safe URLs
-  labelled `검토용 화면` / `검토용 APK`; Doll Toss remains disabled without a URL.
+  labelled `검토용 화면`; Doll Toss remains disabled without a URL.
   A reachable demo, APK or store review never upgrades operational status.
 - Hover/click transitions, restrained pointer motion, image enlargement, Escape
   closing and focus return are available. Reduced-motion preferences are honored.
@@ -66,12 +67,14 @@ retained for recovery.
   country or physical-device installation. Source evidence:
   `C:/DeVelop/Career_Management/career_system/products/operations-evidence/2026-11-14/app-public-status.json`.
   A later update under review does not make an already-public app unreleased.
-- MORI CAM is included at the approved stage `검토 중 · Android 앱 · 테스트 APK 배포 · Google Play 심사 중`.
-  Its action downloads the verified public 2.1.1 prerelease APK:
-  https://github.com/tndud2505-ops/MORI-CAM-Downloads/releases/download/v2.1.1-camera-preview/MORI-CAM-2.1.1-release.apk .
-  SHA256: `ac036763ed9ecf02aa05907b3e6568b83e6e92a914e365e4918f0d51be3663e3`.
-  Play is not public in the November 15 Korean check; local 2.2.0 work and
-  requested moving-video QR features are not claimed as published.
+- MORI CAM is `서비스 중 · Android 앱`. Its `Google Play에서 보기` action opens
+  the public Korean production listing for `com.moricam.app`:
+  https://play.google.com/store/apps/details?id=com.moricam.app&hl=ko&gl=KR .
+  Verified release information supplied for this update (November 25, 2026):
+  HTTP 200, title `모리캠 - 컬러 필름 네컷 사진`, version `2.18.5`.
+  The former prerelease APK action and review-state copy are replaced. This
+  confirms the Korean listing, not other-country availability or installation
+  on a physical device. The existing approved November 14 images are preserved.
 - Doll Toss is under 검토 중 and remains a developing 3D game. It has an internal catalog introduction
   and approved screenshot only, with no external test URL or playable-release claim.
 - All eleven public projects remain visible with their source operational
